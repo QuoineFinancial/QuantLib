@@ -37,6 +37,11 @@ env:
       CACHEDCC="ccache gcc" CACHEDCXX="ccache g++"
       CXXFLAGS="-O2 -Wall -Wno-unknown-pragmas -Wno-deprecated-declarations -Werror"
     #
+    - INFO="gcc 9.x"
+      DOCKER_IMAGE=lballabio/quantlib-devenv:eoan
+      CACHEDCC="ccache gcc" CACHEDCXX="ccache g++"
+      CXXFLAGS="-O2 -Wall -Wno-unknown-pragmas -Wno-deprecated-declarations -Werror"
+    #
     - INFO="Clang 6"
       DOCKER_IMAGE=lballabio/quantlib-devenv:bionic
       CACHEDCC="ccache clang" CACHEDCXX="ccache clang++"
